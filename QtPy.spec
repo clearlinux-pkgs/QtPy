@@ -14,7 +14,7 @@ Requires: QtPy-python3
 Requires: QtPy-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
