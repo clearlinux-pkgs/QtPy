@@ -4,7 +4,7 @@
 #
 Name     : QtPy
 Version  : 1.3.1
-Release  : 4
+Release  : 5
 URL      : https://pypi.python.org/packages/b9/16/b801f43a911e644c3308f86f8c294a5a2d1e7c6d77a87122bdb03b29888d/QtPy-1.3.1.tar.gz
 Source0  : https://pypi.python.org/packages/b9/16/b801f43a911e644c3308f86f8c294a5a2d1e7c6d77a87122bdb03b29888d/QtPy-1.3.1.tar.gz
 Summary  : Provides an abstraction layer on top of the various Qt bindings (PyQt5, PyQt4 and PySide) and additional custom QWidgets.
