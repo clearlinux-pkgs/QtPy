@@ -4,7 +4,7 @@
 #
 Name     : QtPy
 Version  : 1.7.0
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/34/78/c2f4c11d1c9fc0fcd3814c10c22affc73cb800b86f21c308dc479f17e56c/QtPy-1.7.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/34/78/c2f4c11d1c9fc0fcd3814c10c22affc73cb800b86f21c308dc479f17e56c/QtPy-1.7.0.tar.gz
 Summary  : Provides an abstraction layer on top of the various Qt bindings (PyQt5, PyQt4 and PySide) and additional custom QWidgets.
