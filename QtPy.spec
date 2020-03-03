@@ -4,7 +4,7 @@
 #
 Name     : QtPy
 Version  : 1.9.0
-Release  : 20
+Release  : 21
 URL      : https://files.pythonhosted.org/packages/af/9f/f92125f9ba07830e5dd99141d07d5edffd555670d2c16a8454ac4a65d27b/QtPy-1.9.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/af/9f/f92125f9ba07830e5dd99141d07d5edffd555670d2c16a8454ac4a65d27b/QtPy-1.9.0.tar.gz
 Summary  : Provides an abstraction layer on top of the various Qt bindings (PyQt5, PyQt4 and PySide) and additional custom QWidgets.
@@ -50,6 +50,7 @@ python components for the QtPy package.
 Summary: python3 components for the QtPy package.
 Group: Default
 Requires: python3-core
+Provides: pypi(QtPy)
 
 %description python3
 python3 components for the QtPy package.
@@ -57,13 +58,15 @@ python3 components for the QtPy package.
 
 %prep
 %setup -q -n QtPy-1.9.0
+cd %{_builddir}/QtPy-1.9.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1564064796
+export SOURCE_DATE_EPOCH=1583218296
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -79,7 +82,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/QtPy
-cp LICENSE.txt %{buildroot}/usr/share/package-licenses/QtPy/LICENSE.txt
+cp %{_builddir}/QtPy-1.9.0/LICENSE.txt %{buildroot}/usr/share/package-licenses/QtPy/df93926e7bb00976b7e0df5bada6a01580bb3aec
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -90,7 +93,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/QtPy/LICENSE.txt
+/usr/share/package-licenses/QtPy/df93926e7bb00976b7e0df5bada6a01580bb3aec
 
 %files python
 %defattr(-,root,root,-)
