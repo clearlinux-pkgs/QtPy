@@ -4,7 +4,7 @@
 #
 Name     : QtPy
 Version  : 1.9.0
-Release  : 21
+Release  : 22
 URL      : https://files.pythonhosted.org/packages/af/9f/f92125f9ba07830e5dd99141d07d5edffd555670d2c16a8454ac4a65d27b/QtPy-1.9.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/af/9f/f92125f9ba07830e5dd99141d07d5edffd555670d2c16a8454ac4a65d27b/QtPy-1.9.0.tar.gz
 Summary  : Provides an abstraction layer on top of the various Qt bindings (PyQt5, PyQt4 and PySide) and additional custom QWidgets.
@@ -50,7 +50,7 @@ python components for the QtPy package.
 Summary: python3 components for the QtPy package.
 Group: Default
 Requires: python3-core
-Provides: pypi(QtPy)
+Provides: pypi(qtpy)
 
 %description python3
 python3 components for the QtPy package.
@@ -65,8 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583218296
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583522900
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
