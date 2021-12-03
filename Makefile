@@ -1,5 +1,5 @@
 PKG_NAME := QtPy
-URL = https://files.pythonhosted.org/packages/a5/aa/661c4ce9bed57ea80e1692ff66bfa27d116cbbf7952362c45ceb0282a7a2/QtPy-1.11.2.tar.gz
+URL = https://files.pythonhosted.org/packages/7d/0d/5e2e2a580519d7e7df3840716835f4578bfa434a949d1195fa0661a24503/QtPy-1.11.3.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
